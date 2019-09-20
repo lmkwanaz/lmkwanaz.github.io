@@ -1,0 +1,128 @@
+body{
+    background: black;
+    margin: 0;
+    color: rgb(2, 9, 15);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.showcase::after{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(seascape-sunrise-beautiful-natural-seascape-sea-sunrise-black-sea-coast-seascape-sunrise-beautiful-natural-158558796.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    transition: all 1000ms;
+}
+
+
+
+.showcase:hover::after{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.showcase:hover .title{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.content{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+}
+
+.content .title{
+    font-size: 1.7;
+    margin-top: 1rem;
+}
+
+.container{
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    padding: 1rem 4rem;
+    position: absolute;
+    z-index: 1;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+  
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  } */
+ /* .button1{
+    position: absolute;
+    z-index: 1;
+    left: 450%;
+    margin-top: -150px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: right;
+   
+}
+.button2{
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 320%;
+    margin-top: -150px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: right;
+   
+}
+.button3{
+    position: absolute;
+    z-index: 1;
+    top: -11%;
+    left: 170%;
+    margin-top: -150px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: right;
+   
+}
+.button4{
+    position: absolute;
+    z-index: 1;
+    top: -11%;
+    left: 7%;
+    margin-top: -150px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: right;
+   
+} */
+
+/*  */
