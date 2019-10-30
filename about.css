@@ -9,7 +9,7 @@ body{
     content: '';
     height: 100vh;
     width: 100%;
-    background-image: url(seascape-sunrise-beautiful-natural-seascape-sea-sunrise-black-sea-coast-seascape-sunrise-beautiful-natural-158558796.jpg);
+    background-image: url(newpic.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -18,18 +18,6 @@ body{
     -webkit-filter: blur(4px);
     transition: all 1000ms;
 }
-
-
-
-/* .showcase:hover::after{
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-} */
-
-/* .showcase:hover .title{
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-} */
 
 .content{
     position: absolute;
@@ -44,13 +32,40 @@ body{
     transition: all 1000ms;
 }
 
+.home:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(150, 134, 70);
+   
+    transition: all 3500ms;
+}
+
+.about:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(150, 134, 70);
+   
+    transition: all 3500ms;
+}
+
+.skills:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(150, 134, 70);
+   
+    transition: all 3500ms;
+}
+.contacts:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(150, 134, 70);
+   
+    transition: all 3500ms;
+}
+
 .content .title{
     font-size: 1.7;
     margin-top: -6rem;
     margin-left: 120px;
     background-color: rgba(145, 102, 102, 0.5);
     margin-bottom: 10px;
-    border-radius: 10px; 
+    border-radius: 5px; 
 }
 
 .container{
@@ -66,3 +81,38 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
    
 }
+
+@media(max-width:768px)
+{
+  .showcase{
+    display :block;
+  }
+  
+  .about:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(180, 176, 158);
+   
+    transition: all 1000ms;
+}
+.home:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(180, 176, 158);
+   
+    transition: all 1000ms;
+}
+
+.skills:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(180, 176, 158);
+   
+    transition: all 1000ms;
+}
+
+.contacts:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(180, 176, 158);
+   
+    transition: all 1000ms;
+}
+ 
+  }

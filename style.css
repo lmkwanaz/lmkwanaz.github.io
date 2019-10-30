@@ -9,7 +9,7 @@ body{
     content: '';
     height: 100vh;
     width: 100%;
-    background-image: url(seascape-sunrise-beautiful-natural-seascape-sea-sunrise-black-sea-coast-seascape-sunrise-beautiful-natural-158558796.jpg);
+    background-image: url(newpic.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,9 +26,24 @@ body{
     -webkit-filter: blur(0px);
 }
 
-.showcase:hover .title{
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+.about:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(150, 134, 70);
+   
+    transition: all 3500ms;
+}
+
+.skills:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(150, 134, 70);
+   
+    transition: all 3500ms;
+}
+.contacts:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(150, 134, 70);
+   
+    transition: all 3500ms;
 }
 
 .content{
@@ -63,66 +78,32 @@ body{
    
 }
 
-/* .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
 
-    padding: 10px;
+@media(max-width:768px)
+{
+  .showcase{
+    display :block;
   }
   
-  .grid-container > div {
-  
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  } */
- /* .button1{
-    position: absolute;
-    z-index: 1;
-    left: 450%;
-    margin-top: -150px;
-    margin-left: -145px;
-    width: 300px;
-    height: 350px;
-    text-align: right;
+  .about:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(180, 176, 158);
    
+    transition: all 1000ms;
 }
-.button2{
-    position: absolute;
-    z-index: 1;
-    top: 0%;
-    left: 320%;
-    margin-top: -150px;
-    margin-left: -145px;
-    width: 300px;
-    height: 350px;
-    text-align: right;
-   
-}
-.button3{
-    position: absolute;
-    z-index: 1;
-    top: -11%;
-    left: 170%;
-    margin-top: -150px;
-    margin-left: -145px;
-    width: 300px;
-    height: 350px;
-    text-align: right;
-   
-}
-.button4{
-    position: absolute;
-    z-index: 1;
-    top: -11%;
-    left: 7%;
-    margin-top: -150px;
-    margin-left: -145px;
-    width: 300px;
-    height: 350px;
-    text-align: right;
-   
-} */
 
-/*  */
+.skills:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(180, 176, 158);
+   
+    transition: all 1000ms;
+}
+
+.contacts:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(180, 176, 158);
+   
+    transition: all 1000ms;
+}
+ 
+  }
