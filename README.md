@@ -1,2 +1,0 @@
-# lmkwanaz.github.io
-Portfolio
