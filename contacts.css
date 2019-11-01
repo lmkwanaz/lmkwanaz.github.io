@@ -54,13 +54,14 @@ body{
 
 
 .content .title{
-    font-size: 1.7;
+    font-size: 20px;
     margin-top: -6rem;
     margin-left: 120px;
     background-color: rgba(145, 102, 110, 0.5);
     margin-bottom: 20px;
     border-radius: 5px;
-    padding-right: 280px; 
+    padding-right: 280px;
+    padding-left: 20px; 
 }
 /* .title{
     position: initial;
@@ -87,6 +88,28 @@ body{
     display: block;
     height: auto;
   }
+  .content .title{
+    font-size: 17px;
+    margin-top: -6rem;
+    margin-left: 120px;
+    background-color: rgba(145, 102, 110, 0.5);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-right: 240px; 
+}
+
+  .content{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 178px;
+    margin-left: -270px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+}
 
   
   .about:hover{
@@ -111,3 +134,5 @@ body{
 }
  
   }
+
+  
