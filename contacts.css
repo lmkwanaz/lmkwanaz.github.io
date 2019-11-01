@@ -83,6 +83,10 @@ body{
 
 @media(max-width:768px)
 {
+    body{
+        background: cover;
+    }
+
   .showcase{
     max-width: 100%;
     display: block;
