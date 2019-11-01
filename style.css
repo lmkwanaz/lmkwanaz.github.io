@@ -85,10 +85,6 @@ body{
     display :block;
   }
   
-  /* .content .title{
-    font-size: 100px;
-  } */
-
   .about:hover{
     color:rgb(15, 114, 53);
     background-color: rgb(180, 176, 158);
