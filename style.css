@@ -85,9 +85,9 @@ body{
     display :block;
   }
   
-  .content .title{
+  /* .content .title{
     font-size: 100px;
-  }
+  } */
 
   .about:hover{
     color:rgb(15, 114, 53);
