@@ -5,6 +5,15 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.fit-image{
+ 
+object-fit: cover;
+/* margin-top: 20px;
+margin-left: 17%; */
+}
+
+
+
 .showcase::after{
     content: '';
     height: 100vh;
@@ -79,11 +88,24 @@ body{
 }
 
 
-@media(max-width:768px)
+@media screen and (max-width:768px)
 {
   .showcase{
     display :block;
   }
+
+  .content .title{
+    font-size: large;
+    margin-top: 1rem;
+}
+
+  .fit-image{
+ 
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: -3%;
+    height: 300px
+    }
   
   .about:hover{
     color:rgb(15, 114, 53);
@@ -107,3 +129,86 @@ body{
 }
  
   }
+
+  @media screen and (max-width:360px)
+{
+  .showcase{
+    display :block;
+  }
+
+  .fit-image{
+ 
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: -3%;
+    /* height: 300px */
+    }
+  
+  .about:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(180, 176, 158);
+   
+    transition: all 1000ms;
+}
+
+.skills:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(180, 176, 158);
+   
+    transition: all 1000ms;
+}
+
+.contacts:hover{
+    color:rgb(15, 114, 53);
+    background-color: rgb(180, 176, 158);
+   
+    transition: all 1000ms;
+}
+ 
+  }
+
+    @media screen and (max-width:320px)
+    {
+      .showcase{
+        display :block;
+      }
+  
+      .content .title{
+          font-size: large;
+          margin-top: 1rem;
+      }
+    
+      .fit-image{
+     
+        width: 100%;
+        object-fit: cover;
+        margin-top:-7px;
+        margin-left: 5%;
+        height: 100%;
+        }
+      
+      .about:hover{
+        color:rgb(15, 114, 53);
+        background-color: rgb(180, 176, 158);
+       
+        transition: all 1000ms;
+    }
+    
+    .skills:hover{
+        color:rgb(15, 114, 53);
+        background-color: rgb(180, 176, 158);
+       
+        transition: all 1000ms;
+    }
+    
+    .contacts:hover{
+        color:rgb(15, 114, 53);
+        background-color: rgb(180, 176, 158);
+       
+        transition: all 1000ms;
+    }
+     
+      }
+  
+  
