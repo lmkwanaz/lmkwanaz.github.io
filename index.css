@@ -8,6 +8,8 @@ body{
   -webkit-user-select: none;
   user-select: none;
 
+  background-image: url(Neo.jpg);
+
   /* background: url(Neo.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,11 +19,11 @@ body{
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Neo.jpg', sizingMethod='scale')"; */
 }
 
-html {    
+/* html {    
   background: url('Neo.jpg') no-repeat center fixed;     
   background-size: cover;
  
-}
+} */
 
 a {
 color: #000;
