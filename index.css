@@ -9,6 +9,10 @@ body{
   user-select: none;
 
   background-image: url(Neo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 
   /* background: url(Neo.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
