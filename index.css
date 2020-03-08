@@ -374,13 +374,6 @@ margin-top: 1rem;
   text-align: center;
  
 }
-body{
-  background-image: url(Neo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
 
 .content .title{
   font-size: 1.7;
@@ -408,15 +401,6 @@ body{
   text-align: center;
  
 }
-
-body{
-  background-image: url(Neo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
 .content .title{
   font-size: 1.7;
   margin-top: 15rem;
@@ -443,15 +427,6 @@ body{
   text-align: center;
  
 }
-
-body{
-  background-image: url(Neo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
 .content .title{
   font-size: 1.7;
   margin-top: 15rem;
@@ -477,12 +452,13 @@ body{
   margin-left: 130px;
 }
 
-body{
-  background-image: url(Neo.jpg);
+}
+
+@media screen and (min-width:320px) and (max-width:992px){
+  body{background-image: url(Neo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-}
-
+  }
 }
