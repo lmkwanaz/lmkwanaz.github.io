@@ -18,8 +18,9 @@ body{
 }
 
 html {    
-  background: url('Neo.jpg') no-repeat center fixed;     
-  background-size: cover;
+  /* background: url('Neo.jpg') no-repeat center fixed;     
+  background-size: cover; */
+  background-color: yellowgreen;
 }
 
 a {
