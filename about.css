@@ -365,7 +365,7 @@ margin-top: 16%;
 
 .full{
 
-margin-left: 400px;
+margin-left: 200px;
 }
 #line{
 width: 23%;
@@ -443,7 +443,7 @@ margin-left: 34%;
 @media screen and (max-width:360px){
   .content .title{
     font-size: 1.7;
-    margin-top: -1rem;
+    margin-top: -10rem;
     margin-left: -3rem;
 
     width: 100%;
@@ -452,7 +452,7 @@ margin-left: 34%;
 
   .content{
     width: 100%;
-    margin: 75px 1px 1px;
+    margin: 1px 1px 50px;
   }
   .full{
     margin-left: 50px;
@@ -468,7 +468,7 @@ margin-left: 34%;
 @media screen and (max-width:375px){
   .content .title{
     font-size: 1.7;
-    margin-top: -1rem;
+    margin-top: -3rem;
     margin-left: -8rem;
 
     width: 100%;
@@ -490,7 +490,7 @@ margin-left: 34%;
 @media screen and (max-width:411px){
   .content .title{
     font-size: 1.7;
-    margin-top: -1rem;
+    margin-top: -3rem;
     margin-left: -3rem;
 
     width: 100%;
@@ -515,7 +515,7 @@ margin-left: 34%;
 @media screen and (max-width:414px){
   .content .title{
     font-size: 1.7;
-    margin-top: -1rem;
+    margin-top: -3rem;
     margin-left: -3rem;
 
     width: 100%;
@@ -535,3 +535,27 @@ margin-left: 34%;
     width:100%
   }
 }
+ 
+/* @media screen and (min-width:768px){
+  .content .title{
+    font-size: 1.7;
+    margin-top: -3rem;
+    margin-left: -3rem;
+
+    width: 100%;
+   
+  }
+
+  .content{
+    width: 100%;
+    margin: 75px 1px 1px;
+  }
+  .full{
+    margin-left: 50px;
+    width: 300%;
+    font-size: 1rem;
+  }
+  .bold1{
+    width:100%
+  }
+} */
