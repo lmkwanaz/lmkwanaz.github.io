@@ -7,27 +7,61 @@ body{
   font-family: 'Courier New', Courier, monospace;
   -webkit-user-select: none;
   user-select: none;
-
-  background-image: url(Neo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-
-  /* background: url(Neo.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.Neo.jpg', sizingMethod='scale');
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Neo.jpg', sizingMethod='scale')"; */
 }
 
-/* html {    
-  background: url('Neo.jpg') no-repeat center fixed;     
+.showcase::after{
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: url(Neo.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+
+/* .content{
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  margin-top: 325px;
+  margin-left: -260px;
+  width: 500px;
+  height: 150px;
+  text-align: center;
+}
+
+.content .title{
+color: #ffffff;
+  font-size: 1.7;
+  margin-top: 1rem;
  
 } */
+
+.container{
+max-width: 100%;
+z-index: 1;
+overflow: hidden;
+position: fixed;
+
+  /* max-width: 100%;
+  max-height: 100%;
+  margin: 50px 50px 50px 50px;
+  overflow: hidden;
+  padding: 1rem 4rem;
+  padding: 100px 100px 100px 100px;
+ 
+  position: fixed;
+  z-index: 1; */
+}
+/* .grid-3{
+  display: grid;
+  grid-template-columns: 1fr;
+ 
+} */
+/*////////////////////////////////////*/
 
 a {
 color: #000;
@@ -36,8 +70,6 @@ color: #000;
 /* header */
 
 .header {
-/* background-color: #fff; */
-/* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
 position: fixed;
 width: 100%;
 z-index: 3;
@@ -345,7 +377,7 @@ margin-left: 130px;
 .content{
 position: absolute;
 z-index: 1;
-top: -30%;
+top: -10%;
 left: 50%;
 margin-top: 325px;
 margin-left: -260px;
@@ -357,9 +389,36 @@ text-align: center;
 .content .title{
 color: #ffffff;
 font-size: 1.7;
-margin-top: 1rem;
+margin-bottom: 1rem;
 
 }
+
+@media screen and (max-width:320px) and (max-width:320px){
+  .content{
+    position: absolute;
+    z-index: 1;
+    top: 1%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+   
+  }
+  
+  .content .title{
+    font-size: 1.7;
+    margin-top: 15rem;
+    margin-left: -3rem;
+  }
+  .last{
+    color: rgb(255, 255, 255);
+    font-size: smaller;
+    margin-left: 60px;
+  }
+  
+  }
 
 @media screen and (max-width:360px){
 .content{
@@ -440,6 +499,32 @@ margin-top: 1rem;
 
 }
 
+@media screen and (max-width:480px) and (min-width:480px) {
+  .content{
+    position: absolute;
+    z-index: 1;
+    top: 1%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+   
+  }
+  .content .title{
+    font-size: 1.7;
+    margin-top: 15rem;
+    margin-left: -3rem;
+  }
+  .last{
+    color: rgb(255, 255, 255);
+    font-size: smaller;
+    margin-left: 60px;
+  }
+  
+  }
+
 @media screen and (min-width:768px){
 .content .title{
   font-size: 1.7;
@@ -454,11 +539,15 @@ margin-top: 1rem;
 
 }
 
-@media screen and (min-width:320px) and (max-width:992px){
-  body{background-image: url(Neo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+@media screen and (min-width:1024px){
+  .content .title{
+    font-size: 1.7;
+    margin-top: 10rem;
+    margin-left: -1rem;
+  }
+  .last{
+    color: rgb(255, 255, 255);
+    font-size: smaller;
+    margin-left: 130px;
   }
 }

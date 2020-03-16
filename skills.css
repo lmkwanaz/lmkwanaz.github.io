@@ -17,8 +17,6 @@ body{
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Neo.jpg', sizingMethod='scale')";
 }
 
-
-
 a {
 color: #000;
 }
@@ -497,6 +495,10 @@ animation-name: zoomIn;
    
   }
 
+  .first{
+    color: whitesmoke;
+  }
+
   .content{
     width: 100%;
     margin: 75px 1px 1px 100px;
@@ -522,6 +524,9 @@ animation-name: zoomIn;
    
   }
 
+  .first{
+    color: whitesmoke;
+  }
   .content{
     width: 100%;
     margin: 75px 1px 1px 100px;
@@ -545,6 +550,10 @@ animation-name: zoomIn;
 
     width: 100%;
    
+  }
+
+  .first{
+    color: whitesmoke;
   }
 
   .content{

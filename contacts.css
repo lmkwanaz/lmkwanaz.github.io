@@ -17,8 +17,6 @@ body{
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Neo.jpg', sizingMethod='scale')";
 }
 
-
-
 a {
 color: #000;
 }
@@ -447,6 +445,10 @@ margin-left: 34%;
    
   }
 
+  .first{
+    color: whitesmoke;
+  }
+
   .content{
     width: -200%;
     margin: 200px 20px 20px 20px;
@@ -470,6 +472,10 @@ margin-left: 34%;
 
       width: 100%;
      
+    }
+
+    .first{
+      color: whitesmoke;
     }
 
     .content{
@@ -497,6 +503,10 @@ margin-left: 34%;
      
     }
 
+    .first{
+      color: whitesmoke;
+    }
+
     .content{
       width: -200%;
       margin: 200px 20px 20px 20px;
@@ -522,6 +532,9 @@ margin-left: 34%;
      
     }
 
+    .first{
+      color: whitesmoke;
+    }
     .content{
       width: -200%;
       margin: 200px 20px 20px 20px;
