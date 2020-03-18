@@ -397,10 +397,10 @@ margin-bottom: 1rem;
   .content{
     position: absolute;
     z-index: 1;
-    top: 1%;
+    top: 91%;
     left: 50%;
-    margin-top: 105px;
-    margin-left: -145px;
+    margin-top: 75px;
+    margin-left: -1045px;
     width: 300px;
     height: 350px;
     text-align: center;
@@ -424,9 +424,9 @@ margin-bottom: 1rem;
 .content{
   position: absolute;
   z-index: 1;
-  top: 10%;
+  top: 70%;
   left: 50%;
-  margin-top: 105px;
+  margin-top: 75px;
   margin-left: -145px;
   width: 300px;
   height: 350px;
@@ -496,8 +496,33 @@ margin-bottom: 1rem;
   font-size: smaller;
   margin-left: 60px;
 }
-
 }
+
+@media screen and (max-width:375px) and (min-width:375px){
+  .content{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 75px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+   
+  }
+  .content .title{
+    font-size: 1.7;
+    margin-top: 15rem;
+    margin-left: -3rem;
+  }
+  .last{
+    color: rgb(255, 255, 255);
+    font-size: smaller;
+    margin-left: 60px;
+  }
+  
+  }
 
 @media screen and (max-width:480px) and (min-width:480px) {
   .content{
