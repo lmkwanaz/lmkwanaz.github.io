@@ -26,30 +26,44 @@
       </ul>
       
         <div class="row">
-          <!-- <div class="">
-            <div class="content">   
-              <div class="title row name fadeInDown animated first"> 
-                  <h1 class="first"><b><font size="12">Lwandile Mkwanazi</font></b></h1>
-                  <h4 class="wow bounceInDown animated last" data-wow-delay="9s"><i>Java Developer & Web Developer</i></h4>
-                
-              </div>
-          </div>
-          </div> -->
         </div>
       </div>
       <div class="content ">
         
         <div class="title row name fadeInDown animated first  "></div>
-            <font class="bold1 logo wow zoomIn animated" data-wow-delay="1s" size="0"><h5 class="full"><b>Full stack Developer</h5></b>
+            <font class="bold1 " data-wow-delay="1s" size="0"><h5 class="full logo wow zoomIn animated"><b>Full stack Developer</h5></b>
             <b class="bold "><h5  class="wow fadeInLeft animated" id="line1" data-wow-delay="0.4s">From a full-time musician to a self taught full-stack developer. </h5> 
               <h5 class="wow fadeInRight animated" id="line2" data-wow-delay="0.4s">I spend hours constantly upskilling in code.</h5>
               <h5 class="wow fadeInLeft animated" id="line3" data-wow-delay="0.4s">I prefer working in teams as I believe that it is through collaboration that understanding is developed, communication is built and knowledge is gained.</h5>
-              <h5 class="wow fadeInRight animated" id="line4" data-wow-delay="0.4s">I teach and share as much as I learn and desires to work with who are driven to achieve their goals</h5>
+              <h5 class="wow fadeInRight animated" id="line4" data-wow-delay="0.4s">I teach and share as much as I learn and desires to work with those who are driven to achieve their goals</h5>
           </font>
          
         </div>
 
 </header>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+  $(window).on("resize", function (e) {
+      checkScreenSize();
+  });
+
+  checkScreenSize();
+
+  function checkScreenSize(){
+      var newWindowWidth = $(window).width();
+      if (newWindowWidth < 768) {
+        alert('Scroll on the box to read more!!');
+      }
+      else
+      {
+         
+      }
+  }
+});
+  </script>
     
 </body>
 </html>
+

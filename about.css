@@ -3,10 +3,17 @@ body{
   background: rgb(109, 105, 105);
   margin: 0;
   padding: 0;
-  color: rgb(2, 9, 15);
   font-family: 'Courier New', Courier, monospace;
   -webkit-user-select: none;
   user-select: none;
+
+  background: url(Neo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.Neo.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Neo.jpg', sizingMethod='scale')";
 }
 
 .showcase::after{
@@ -427,7 +434,17 @@ margin-bottom: 1rem;
 
 @media screen and (max-width:360px) and (min-width:360px){
 
- 
+  body{
+    background: url(Neo.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.Neo.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Neo.jpg', sizingMethod='scale')";
+  }
+  
+
 .content{
   position: absolute;
   z-index: 1;
