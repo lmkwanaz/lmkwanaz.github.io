@@ -61,16 +61,27 @@
           //  alert("hey land")
   
           $(".content").css({
-            "top": "-10%",
-            "height": "100%",
-            "width": "100%",
-            "overflow": "auto"
+                  "position": "absolute",
+          "z-index": "1",
+          "top": "-33%",
+          "left": "50%",
+          "margin-top": "300px",
+          "margin-left": "-145px",
+          "width": "300px",
+          "height": "80px",
+          "text-align": "center"
           });
-          $(document).ready(function(){
-          $(".navicon").click(function(){
-            $(".content").toggle();
-          });});
-  
+          $(".content .title").css({
+            "font-size": "1.7",
+            "margin-top": "-1rem",
+            "margin-left": "-3rem"
+          });
+
+          $(".last").css({
+            "color": "rgb(255, 255, 255)",
+              "font-size": "smaller",
+              "margin-left": "60px"
+          });  
         }
         else{
           // alert("which screen size is this");
