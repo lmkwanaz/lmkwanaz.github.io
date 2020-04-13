@@ -42,25 +42,45 @@
 
 <script type="text/javascript">
 
-$(document).ready(function () {
-  $(window).on("resize", function (e) {
-      checkScreenSize();
-  });
-
-  checkScreenSize();
-
-  function checkScreenSize(){
-      var newWindowWidth = $(window).width();
-      if (newWindowWidth < 768) {
-        alert('Scroll on the box to read more!!');
-      }
-      else
-      {
+  $(document).ready(function () {
+    $(window).on("resize", function (e) {
+        checkScreenSize();
+    });
+  
+    checkScreenSize();
+  
+    function checkScreenSize(){
+        var newWindowWidth = $(window).width();
+        var newWindowWidth1 = $(window).height();
+        var mql = window.matchMedia("(orientation: portrait)");
+        var mql1 = window.matchMedia("(orientation: landscape)");
+        if(newWindowWidth < 768){
+        if(mql.matches){
+          // alert("hey port")
          
+        }
+        else if(mql1.matches || newWindowWidth == 823){
+          //  alert("hey land")
+  
+          $(".content").css({
+            "top": "-67%",
+            "height": "65%",
+            "overflow": "auto"
+          });
+          $(document).ready(function(){
+          $(".navicon").click(function(){
+            $(".content").toggle();
+          });});
+  
+        }
+        else{
+          // alert("which screen size is this");
+          return 0;
+        }
       }
-  }
-});
-  </script>
+    }
+  });
+    </script>
     
 </body>
 </html>
