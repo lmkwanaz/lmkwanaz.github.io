@@ -1,102 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <title>Lwandile Mkwanazi</title>
 </head>
+
 <body>
-       
-  <header class="header showcase  img-responsive">
-    <div class="container">
 
-      <a href="" class="logo1 logo wow zoomIn animated">Quaver</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li class=""><a class="btn btn-outline-light  About" data-wow-delay="0.4s" href="about.html">About</a></li><br/>
-        <li><a class="btn btn-outline-light Skills" href="skills.html">Skills</a></li><br/>
-        <li><a class="btn btn-outline-light Contact" href="contacts.html">Contact</a></li>
-      </ul>
-      
-        <div class="row">
+    <header class="header showcase  img-responsive">
+        <div class="container">
+
+            <a href="" class="logo1 logo wow zoomIn animated">Quaver</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li class=""><a class="btn btn-outline-light  About" data-wow-delay="0.4s" href="about.html">About</a></li><br/>
+                <li><a class="btn btn-outline-light Skills" href="skills.html">Skills</a></li><br/>
+                <li><a class="btn btn-outline-light Contact" href="contacts.html">Contact</a></li>
+            </ul>
+
+            <div class="row">
+            </div>
         </div>
-      </div>
-<div class="content">   
-    <div class="title row name fadeInDown animated ">
-        <h1 class="first"><b><font size="12">Lwandile  Mkwanazi</font></b></h1>
-        <h4 class="wow bounceInDown animated last" data-wow-delay="9s"><i>Java Developer & Web Developer</i></h4>
-      
-    </div>
-</div>
+        <div class="content">
+            <div class="title row name fadeInDown animated ">
+                <h1 class="first"><b><font size="12">Lwandile  Mkwanazi</font></b></h1>
+                <h4 class="wow bounceInDown animated last" data-wow-delay="9s"><i>Full Stack Developer</i></h4>
 
-</header>
+            </div>
+        </div>
 
-<script type="text/javascript">
+    </header>
 
-  $(document).ready(function () {
-    $(window).on("resize", function (e) {
-        checkScreenSize();
-    });
-  
-    checkScreenSize();
-  
-    function checkScreenSize(){
-        var newWindowWidth = $(window).width();
-        var newWindowWidth1 = $(window).height();
-        var mql = window.matchMedia("(orientation: portrait)");
-        var mql1 = window.matchMedia("(orientation: landscape)");
-        if(newWindowWidth < 768){
-        if(mql.matches){
-          // alert("hey port")
-         
-          $(".last").css({
-              "color": "gb(8, 2, 2",
-              "font-size": "smaller",
-              "margin-left": "90px"
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).on("resize", function(e) {
+                checkScreenSize();
             });
 
-        }
-        else if(mql1.matches || newWindowWidth == 823){
-          //  alert("hey land")
-  
-          $(".content").css({
-                  "position": "absolute",
-          "z-index": "1",
-          "top": "-33%",
-          "left": "50%",
-          "margin-top": "300px",
-          "margin-left": "-145px",
-          "width": "300px",
-          "height": "80px",
-          "text-align": "center"
-          });
-          $(".content .title").css({
-            "font-size": "1.7",
-            "margin-top": "-1rem",
-            "margin-left": "-3rem"
-          });
+            checkScreenSize();
 
-          $(".last").css({
-            "color": "rgb(255, 255, 255)",
-              "font-size": "smaller",
-              "margin-left": "95px"
-          });  
-        }
-        else{
-          // alert("which screen size is this");
-          return 0;
-        }
-      }
-    }
-  });
+            function checkScreenSize() {
+                var newWindowWidth = $(window).width();
+                var newWindowWidth1 = $(window).height();
+                var mql = window.matchMedia("(orientation: portrait)");
+                var mql1 = window.matchMedia("(orientation: landscape)");
+                if (newWindowWidth < 768) {
+                    if (mql.matches) {
+                        // alert("hey port")
+                        //         .last{
+                        //   color: rgb(8, 2, 2);
+                        //   font-size: smaller;
+                        //   margin-left: 40px;
+                        // }
+                        $(".last").css({
+                            "color": "gb(8, 2, 2",
+                            "font-size": "smaller",
+                            "margin-left": "90px"
+                        });
+
+                    } else if (mql1.matches || newWindowWidth == 823) {
+                        //  alert("hey land")
+
+                        $(".content").css({
+                            "position": "absolute",
+                            "z-index": "1",
+                            "top": "-33%",
+                            "left": "50%",
+                            "margin-top": "300px",
+                            "margin-left": "-145px",
+                            "width": "300px",
+                            "height": "80px",
+                            "text-align": "center"
+                        });
+                        $(".content .title").css({
+                            "font-size": "1.7",
+                            "margin-top": "-1rem",
+                            "margin-left": "-3rem"
+                        });
+
+
+
+                        $(".last").css({
+                            "color": "rgb(255, 255, 255)",
+                            "font-size": "smaller",
+                            "margin-left": "95px"
+                        });
+                    } else {
+                        // alert("which screen size is this");
+                        return 0;
+                    }
+                }
+            }
+        });
     </script>
 
 </body>
+
 </html>

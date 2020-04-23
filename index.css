@@ -411,10 +411,9 @@ margin-left: -860px;
   color: rgb(255, 255, 255);
   font-size: smaller;
   margin-left: 60px;
+  }
 }
-
-}
-
+  
 @media screen and (max-width:411px) and (min-width:411){
   .content{
     position: absolute;
@@ -436,7 +435,7 @@ margin-left: -860px;
   .last{
     color: rgb(8, 2, 2);
     font-size: smaller;
-    margin-left: 60px;
+    margin-left: 40px;
   }
 
 }
@@ -535,7 +534,7 @@ margin-left: -860px;
 }
 
 @media screen and (min-width:1024px){
-
+/*this is where I control my title name on my index page*/
   .content{
     position: absolute;
     z-index: 1;
