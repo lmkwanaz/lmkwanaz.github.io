@@ -36,6 +36,7 @@
               <h5 class="wow fadeInRight animated" id="line2" data-wow-delay="0.4s">I spend hours constantly upskilling in code.</h5>
               <h5 class="wow fadeInLeft animated" id="line3" data-wow-delay="0.4s">I prefer working in teams as I believe that it is through collaboration that understanding is developed, communication is built and knowledge is gained.</h5>
               <h5 class="wow fadeInRight animated" id="line4" data-wow-delay="0.4s">I teach and share as much as I learn and desires to work with those who are driven to achieve their goals</h5>
+              
           </font>
          
         </div>
@@ -58,7 +59,11 @@
         var mql1 = window.matchMedia("(orientation: landscape)");
         if(newWindowWidth < 768){
         if(mql.matches){
-          // alert("hey port")
+          
+           //alert("hey port")
+
+           $(".content").load(location.href + " .content");
+          
          
         }
         else if(mql1.matches || newWindowWidth == 823){
