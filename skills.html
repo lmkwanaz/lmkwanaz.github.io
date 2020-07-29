@@ -26,27 +26,28 @@
                 <li><a class="btn btn-outline-light Skills" href="about.html">About</a></li><br/>
                 <li><a class="btn btn-outline-light Contact" href="contacts.html">Contact</a></li>
             </ul>
-
-            <div class="row">
-            </div>
         </div>
-        <div class="content">
-            <div class="title row name fadeInDown animated first"></div>
-            <b><h5 class="c logo wow zoomIn animated" data-wow-delay="1s"><b>My skills</b></h5>
-            <p class="wow fadeInLeft animated" data-wow-delay="0.4s">C</p>
-            <p class="wow fadeInLeft animated" data-wow-delay="0.4s">C#</p>
-            <p class="wow fadeInRight animated" data-wow-delay="0.4s">PHP</p>
-            <p class="wow fadeInLeft animated" data-wow-delay="0.4s">Java</p>
-            <p class="wow fadeInRight animated" data-wow-delay="0.4s">Docker</p>
-            <p class="wow fadeInLeft animated" data-wow-delay="0.4s">HTML/CSS</p>
-            <p class="wow fadeInRight animated" data-wow-delay="0.4s">Linux/Unix</p>
-            <p class="wow fadeInLeft animated" data-wow-delay="0.4s">JS/JQuery</p>
-            <p class="wow fadeInRight animated" data-wow-delay="0.4s">SQL/MongoDB</p>
-            <p class="wow fadeInLeft animated" data-wow-delay="0.4s">Express/Nodejs</p>
-            <p class="wow fadeInRight animated" data-wow-delay="0.4s">Handlebar/EJS</p>
-            <p class="wow fadeInLeft animated" data-wow-delay="0.4s">ASP.Net Core</p>
-            </b>
-            </font>
+        <div class="header2">
+            <div class="container2 logo2">
+                <div class="title row name fadeInDown animated first"></div>
+                <b><h5 class="my logo wow zoomIn animated" data-wow-delay="1s"><b id="skil">&nbsp;&nbsp;Technical skills&nbsp;&nbsp;</b></h5>
+                <p class="sk wow fadeInLeft animated" data-wow-delay="0.4s">C</p>
+                <p class="sk wow fadeInLeft animated" data-wow-delay="0.4s">C#</p>
+                <p class="sk wow fadeInRight animated" data-wow-delay="0.4s">PHP</p>
+                <p class="sk wow fadeInLeft animated" data-wow-delay="0.4s">Java</p>
+                <p class="sk wow fadeInRight animated" data-wow-delay="0.4s">Docker</p>
+                <p class="sk wow fadeInLeft animated" data-wow-delay="0.4s">HTML/CSS</p>
+                <p class="sk wow fadeInRight animated" data-wow-delay="0.4s">Bootstrap</p>
+                <p class="sk wow fadeInRight animated" data-wow-delay="0.4s">Linux/Unix</p>
+                <p class="sk wow fadeInLeft animated" data-wow-delay="0.4s">JS/JQuery</p>
+                <p class="sk wow fadeInRight animated" data-wow-delay="0.4s">SQL/MongoDB</p>
+                <p class="sk wow fadeInLeft animated" data-wow-delay="0.4s">Express/Nodejs</p>
+                <p class="sk wow fadeInRight animated" data-wow-delay="0.4s">Handlebar/EJS</p>
+                <p class="sk wow fadeInLeft animated" data-wow-delay="0.4s">.Net Core</p>
+                <p class="sk wow fadeInRight animated" data-wow-delay="0.4s">ASP.Net Framework</p>
+                </b>
+                </font>
+            </div>
         </div>
 
     </header>
@@ -56,36 +57,256 @@
             $(window).on("resize", function(e) {
                 checkScreenSize();
             });
-
             checkScreenSize();
 
             function checkScreenSize() {
                 var newWindowWidth = $(window).width();
-                var newWindowWidth1 = $(window).height();
-                var mql = window.matchMedia("(orientation: portrait)");
-                var mql1 = window.matchMedia("(orientation: landscape)");
-                if (newWindowWidth < 768) {
-                    if (mql.matches) {
-                        // alert("hey port")
+                var newWindowHeight = $(window).height();
+                var portrait = window.matchMedia("(orientation:portrait)");
+                var landscape = window.matchMedia("(orientation: landscape)");
 
-                    } else if (mql1.matches || newWindowWidth == 823) {
-                        //  alert("hey land")
+                //$('body').toggleClass('loaded');
 
-                        $(".content").css({
-                            "top": "-67%",
-                            "height": "65%",
-                            "overflow": "auto"
+                if (window.matchMedia("(orientation: portrait)").matches && newWindowWidth == 450) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "550px 10px 10px 40px",
                         });
-                        $(document).ready(function() {
-                            $(".navicon").click(function() {
-                                $(".content").toggle();
-                            });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "rgba(114, 103, 103, 0.5)"
                         });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                }
 
-                    } else {
-                        // alert("which screen size is this");
-                        return 0;
-                    }
+                if (window.matchMedia("(orientation: portrait)").matches) {
+
+                }
+
+
+                if (landscape.matches && newWindowWidth <= 568) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "200px 10px 10px 100px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "rgba(114, 103, 103, 0.5)"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 600) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "380px 10px 10px 100px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "rgba(114, 103, 103, 0.5)"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 640) {
+                    $(document).ready(function() {
+                        var header2 = $(
+                            '.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "250px 10px 10px 150px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "rgba(114, 103, 103, 0.5)"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 653) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "150px 10px 10px 150px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "rgba(114, 103, 103, 0.5)"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 667) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "250px 10px 10px 140px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "rgba(114, 103, 103, 0.5)"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 736) {
+                    $(document).ready(function() {
+                        var header2 = $(
+                            '.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "310px 10px 10px 200px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "rgba(114, 103, 103, 0.5)"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 812) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "-100%",
+                            "margin": "150px 10px 10px 180px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "rgba(114, 103, 103, 0.5)"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 823) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "-100%",
+                            "margin": "210px 10px 10px 180px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "rgba(114, 103, 103, 0.5)"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth == 1024) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "-100%",
+                            "margin": "750px 10px 10px 150px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth == 2340) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "-100%",
+                            "margin": "1000px 10px 10px 480px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
                 }
             }
         });

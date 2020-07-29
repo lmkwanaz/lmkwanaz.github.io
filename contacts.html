@@ -1,86 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contacts.css">
     <title>Lwandile Mkwanazi</title>
 </head>
+
 <body>
-       
-  <header class="header showcase  img-responsive">
-    <div class="container">
 
-      <a href="" class="logo1 logo wow zoomIn animated">Quaver</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li class=""><a class="btn btn-outline-light  About" data-wow-delay="0.4s" href="index.html">Home</a></li><br/>
-        <li><a class="btn btn-outline-light Skills" href="about.html">About</a></li><br/>
-        <li><a class="btn btn-outline-light Contact" href="skills.html">Skills</a></li>
-      </ul>
-      
-        <div class="row">
+    <header class="header showcase  img-responsive">
+        <div class="container">
+
+            <a href="" class="logo1 logo wow zoomIn animated">Quaver</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li class=""><a class="btn btn-outline-light  About" data-wow-delay="0.4s" href="index.html">Home</a></li><br/>
+                <li><a class="btn btn-outline-light Skills" href="about.html">About</a></li><br/>
+                <li><a class="btn btn-outline-light Contact" href="skills.html">Skills</a></li>
+            </ul>
+
+            <div class="row">
+            </div>
         </div>
-      </div>
-      <div class="content">   
-        <div class="title row first"></div>
-            <font class="bold1" data-wow-delay="1s" size="5"><h5 class="full logo wow zoomIn animated"><b>My Contacts</h5></b>
-              <a class="profile" href="mailto:lwandile.mk38@gmail.com" ><p class="w3-text-white logo wow fadeInLeft animated"><i class="fa fa-envelope icon" data-wow-delay="1s"></i> Lwandile.mk38@gmail.com</p>
-                <a class="profile" target="_blank" href="https://www.linkedin.com/in/lwandile-rich-neo-mkwanazi-a5b66016b/"><p class="w3-text-white logo wow fadeInRight animated"><i class="fa fa-fw fa-linkedin  wow fadeInLeft animated" data-wow-delay="1.5s"></i> Linkedin</p>
-                <a class="profile" target="_blank" href="https://github.com/lmkwanaz"><p class="w3-text-white logo wow fadeInLeft animated "><i class="fa fa-fw fa-github  wow fadeInLeft animated" data-wow-delay="2s"></i> Github</p>
-          </font>
+        <div class="header2">
+            <div class="container2 logo2">
+                <div class="title row first"></div>
+                <font class="bold1" data-wow-delay="1s" size="5">
+                    <h5 class="full logo wow zoomIn animated"><b>My Contacts</h5></b>
+                        <a class="profile" href="mailto:lwandile.mk38@gmail.com">
+                            <p class="w3-text-white logo wow fadeInLeft animated"><i class="fa fa-envelope icon" data-wow-delay="1s"></i> Lwandile.mk38@gmail.com</p>
+                            <a class="profile" target="_blank" href="https://www.linkedin.com/in/lwandile-rich-neo-mkwanazi-a5b66016b/">
+                                <p class="w3-text-white logo wow fadeInRight animated"><i class="fa fa-fw fa-linkedin  wow fadeInLeft animated" data-wow-delay="1.5s"></i> Linkedin</p>
+                                <a class="profile" target="_blank" href="https://github.com/lmkwanaz">
+                                    <p class="w3-text-white logo wow fadeInLeft animated "><i class="fa fa-fw fa-github  wow fadeInLeft animated" data-wow-delay="2s"></i> Github</p>
+                </font>
+            </div>
         </div>
-    </div>
 
-</header>
+    </header>
 
-<script type="text/javascript">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).on("resize", function(e) {
+                checkScreenSize();
+            });
+            checkScreenSize();
 
-  $(document).ready(function () {
-    $(window).on("resize", function (e) {
-        checkScreenSize();
-    });
-  
-    checkScreenSize();
-  
-    function checkScreenSize(){
-        var newWindowWidth = $(window).width();
-        var newWindowWidth1 = $(window).height();
-        var mql = window.matchMedia("(orientation: portrait)");
-        var mql1 = window.matchMedia("(orientation: landscape)");
-        if(newWindowWidth < 768){
-        if(mql.matches){
-          // alert("hey port")
-         
-        }
-        else if(mql1.matches || newWindowWidth == 823){
-          //  alert("hey land")
-  
-          $(".content").css({
-            "top": "-67%",
-            "height": "65%",
-            "overflow": "auto"
-          });
-          $(document).ready(function(){
-          $(".navicon").click(function(){
-            $(".content").toggle();
-          });});
-  
-        }
-        else{
-          // alert("which screen size is this");
-          return 0;
-        }
-      }
-    }
-  });
+            function checkScreenSize() {
+                var newWindowWidth = $(window).width();
+                var newWindowHeight = $(window).height();
+                var portrait = window.matchMedia("(orientation:portrait)");
+                var landscape = window.matchMedia("(orientation: landscape)");
+
+                //$('body').toggleClass('loaded');
+
+                if (window.matchMedia("(orientation: portrait)").matches) {
+                    window.location.load();
+                }
+
+
+                if (landscape.matchMedia && newWindowWidth <= 568) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "200px 10px 10px 30px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 600) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "380px 10px 10px 80px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 640) {
+                    $(document).ready(function() {
+                        var header2 = $(
+                            '.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "250px 10px 10px 80px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 653) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "150px 10px 10px 90px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 667) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "270px 10px 10px 100px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 736) {
+                    $(document).ready(function() {
+                        var header2 = $(
+                            '.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "10%",
+                            "margin": "310px 10px 10px 130px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 812) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "-100%",
+                            "margin": "180px 10px 10px 110px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 823) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "-100%",
+                            "margin": "200px 10px 10px 120px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                } else if (landscape.matches && newWindowWidth <= 1024) {
+                    $(document).ready(function() {
+                        var header2 = $('.header2');
+                        var logo2 = $('logo2');
+                        header2.css({
+                            "top": "-100%",
+                            "height": "-100%",
+                            "margin": "750px 10px 10px 220px",
+                        });
+                        logo2.css({
+                            "height": "-50%",
+                            "overflow": "auto",
+                            "background-color": "red"
+                        });
+                        header2.show();
+                    });
+                    $(document).ready(function() {
+                        $(".navicon").click(function() {
+                            $(".header2").toggle();
+                        });
+                    });
+                }
+            }
+        });
     </script>
-    
+
 </body>
+
 </html>
